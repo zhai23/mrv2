@@ -2,9 +2,8 @@
 // mrv2
 // Copyright Contributors to the mrv2 Project. All rights reserved.
 
-#include "mrvCore/mrvBackend.h"
-#include <tlTimelineUI/IItem.h>
 
+#include "mrvNetwork/mrvTimelineItemOptions.h"
 
 namespace tl
 {

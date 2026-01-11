@@ -2,33 +2,31 @@
 // Copyright (c) 2021-2024 Darby Johnston
 // All rights reserved.
 
-#include <tlTimelineUI/ThumbnailSystem.h>
-
-#include <tlTimelineGL/Render.h>
+#include "ThumbnailSystem.h"
 
 #include <tlTimeline/Timeline.h>
 
 #include <tlIO/System.h>
 
 #ifdef OPENGL_BACKEND
+#    include <tlTimelineGL/Render.h>
 #    include <tlGL/GL.h>
 #    include <tlGL/GLFWWindow.h>
 #    include <tlGL/OffscreenBuffer.h>
+#endif
+
+#ifdef VULKAN_BACKEND
+#    include <tlTimelineVk/Render.h>
+#    include <tlVk/Vk.h>
+#    include <tlVk/OffscreenBuffer.h>
+#    include <FL/Fl_Vk_Utils.H>
+#    include <FL/Fl.H>
 #endif
 
 #include <tlCore/AudioResample.h>
 #include <tlCore/LRUCache.h>
 #include <tlCore/StringFormat.h>
 
-#ifdef VULKAN_BACKEND
-#     include <tlTimelineVk/Render.h>
-
-#     include <tlVk/Vk.h>
-#     include <tlVk/OffscreenBuffer.h>
-
-#    include <FL/Fl_Vk_Utils.H>
-#    include <FL/Fl.H>
-#endif
 
 #include <sstream>
 

@@ -2,8 +2,8 @@
 // Copyright (c) 2021-2024 Darby Johnston
 // All rights reserved.
 
-#include <tlTimelineUI/AudioClipItem.h>
-#include <tlTimelineUI/ThumbnailSystem.h>
+#include "AudioClipItem.h"
+#include "ThumbnailSystem.h"
 
 #include <tlUI/DrawUtil.h>
 

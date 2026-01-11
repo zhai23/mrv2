@@ -4,7 +4,7 @@
 
 #pragma once
 
-#include <tlTimelineUI/TimelineItem.h>
+#include "TimelineItem.h"
 
 #include <vector>
 

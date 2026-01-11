@@ -2,7 +2,7 @@
 // Copyright (c) 2021-2024 Darby Johnston
 // All rights reserved.
 
-#include <tlTimelineUI/IItem.h>
+#include "IItem.h"
 
 #include <tlCore/Error.h>
 #include <tlCore/String.h>

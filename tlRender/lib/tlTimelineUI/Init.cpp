@@ -2,8 +2,8 @@
 // Copyright (c) 2021-2024 Darby Johnston
 // All rights reserved.
 
-#include <tlTimelineUI/ThumbnailSystem.h>
-#include <tlTimelineUI/Init.h>
+#include "ThumbnailSystem.h"
+#include "Init.h"
 
 #include <tlUI/Init.h>
 

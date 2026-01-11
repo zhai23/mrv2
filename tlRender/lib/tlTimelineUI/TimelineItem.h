@@ -5,7 +5,7 @@
 
 #pragma once
 
-#include <tlTimelineUI/IBasicItem.h>
+#include "IBasicItem.h"
 
 #include <tlTimeline/Edit.h>
 #include <tlTimeline/Player.h>

@@ -2,8 +2,8 @@
 // Copyright (c) 2021-2024 Darby Johnston
 // All rights reserved.
 
-#include <tlTimelineUI/VideoClipItem.h>
-#include <tlTimelineUI/ThumbnailSystem.h>
+#include "VideoClipItem.h"
+#include "ThumbnailSystem.h"
 
 #include <tlUI/DrawUtil.h>
 
@@ -64,6 +64,7 @@ namespace tl
                 ui::ColorRole::VideoClip, "tl::TIMELINEUI::VideoClipItem",
                 clip.value, scale, options, displayOptions, itemData, context,
                 parent);
+            
             TLRENDER_P();
 
             p.clipName = clip->name();

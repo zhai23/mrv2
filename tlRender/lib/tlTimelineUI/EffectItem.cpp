@@ -2,7 +2,7 @@
 // Copyright (c) 2021-2024 Darby Johnston
 // All rights reserved.
 
-#include <tlTimelineUI/EffectItem.h>
+#include "EffectItem.h"
 
 #include <tlUI/DrawUtil.h>
 

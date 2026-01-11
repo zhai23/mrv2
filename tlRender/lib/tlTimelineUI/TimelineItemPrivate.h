@@ -5,11 +5,11 @@
 
 #pragma once
 
-#include <tlTimelineUI/Namespace.h>
-#include <tlTimelineUI/ThumbnailSystem.h>
-#include <tlTimelineUI/TimelineItem.h>
-#include <tlTimelineUI/EffectItem.h>
-#include <tlTimelineUI/TransitionItem.h>
+#include "Namespace.h"
+#include "ThumbnailSystem.h"
+#include "TimelineItem.h"
+#include "EffectItem.h"
+#include "TransitionItem.h"
 
 #include <tlUI/Label.h>
 

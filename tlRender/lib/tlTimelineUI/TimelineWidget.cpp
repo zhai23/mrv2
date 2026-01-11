@@ -2,12 +2,14 @@
 // Copyright (c) 2021-2024 Darby Johnston
 // All rights reserved.
 
-#include <tlTimelineUI/TimelineWidget.h>
+#include <TimelineWidget.h>
 
 #include <tlUI/ScrollWidget.h>
 
-#include <tlGL/GL.h>
-#include <tlGL/GLFWWindow.h>
+#ifdef OPENGL_BACKEND
+#    include <tlGL/GL.h>
+#    include <tlGL/GLFWWindow.h>
+#endif
 
 namespace tl
 {
@@ -41,8 +43,10 @@ namespace tl
             double scale = 500.0;
             bool sizeInit = true;
 
+#ifdef OPENGL_BACKEND
             std::shared_ptr<gl::GLFWWindow> window;
-
+#endif
+            
             std::shared_ptr<ui::ScrollWidget> scrollWidget;
             std::shared_ptr<TimelineItem> timelineItem;
 
@@ -93,10 +97,12 @@ namespace tl
             p.itemOptions = observer::Value<ItemOptions>::create();
             p.displayOptions = observer::Value<DisplayOptions>::create();
 
+#ifdef OPENGL_BACKEND
             p.window = gl::GLFWWindow::create(
                 "tl::TIMELINEUI::TimelineWidget", math::Size2i(1, 1), context,
                 static_cast<int>(gl::GLFWWindowOptions::kNone));
-
+#endif
+            
             p.scrollWidget = ui::ScrollWidget::create(
                 context, ui::ScrollType::Both, shared_from_this());
             p.scrollWidget->setScrollEventsEnabled(false);

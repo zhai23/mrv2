@@ -3,12 +3,12 @@
 // Copyright (c) 2024-Present Gonzalo Garramuño
 // All rights reserved.
 
-#include <tlTimelineUI/TimelineItemPrivate.h>
+#include "TimelineItemPrivate.h"
 
-#include <tlTimelineUI/AudioClipItem.h>
-#include <tlTimelineUI/GapItem.h>
-#include <tlTimelineUI/VideoClipItem.h>
-#include <tlTimelineUI/EffectItem.h>
+#include "AudioClipItem.h"
+#include "GapItem.h"
+#include "VideoClipItem.h"
+#include "EffectItem.h"
 
 #include <tlUI/DrawUtil.h>
 #include <tlUI/ScrollArea.h>

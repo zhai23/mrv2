@@ -4,7 +4,7 @@
 
 #pragma once
 
-#include <tlTimelineUI/IItem.h>
+#include "IItem.h"
 
 #include <opentimelineio/gap.h>
 

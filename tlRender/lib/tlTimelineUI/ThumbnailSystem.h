@@ -4,7 +4,7 @@
 
 #pragma once
 
-#include <tlTimelineUI/Namespace.h>
+#include "Namespace.h"
 
 #include <tlIO/IO.h>
 

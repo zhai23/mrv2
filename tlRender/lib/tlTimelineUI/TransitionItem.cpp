@@ -2,7 +2,7 @@
 // Copyright (c) 2021-2024 Darby Johnston
 // All rights reserved.
 
-#include <tlTimelineUI/TransitionItem.h>
+#include "TransitionItem.h"
 
 #include <tlUI/DrawUtil.h>
 

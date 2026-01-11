@@ -4,9 +4,9 @@
 
 #pragma once
 
-#include <tlUI/IWidget.h>
+#include "Namespace.h"
 
-#include <tlTimelineUI/Namespace.h>
+#include <tlUI/IWidget.h>
 
 #include <tlTimeline/TimeUnits.h>
 #include <tlTimeline/Timeline.h>
