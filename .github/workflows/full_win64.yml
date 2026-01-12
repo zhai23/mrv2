@@ -154,8 +154,8 @@ jobs:
       with:
         name: mrv2-windows-opengl-amd64
         path: |
-          BUILD-Windows-amd64/Release/*.exe
-          BUILD-Windows-amd64/Release/*.zip
+          packages/BUILD-Windows-amd64/Release/*.exe
+          packages/BUILD-Windows-amd64/Release/*.zip
         retention-days: 30
         
     - name: Upload binaries 
