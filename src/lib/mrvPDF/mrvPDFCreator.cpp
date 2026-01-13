@@ -13,7 +13,7 @@
 
 #include "mrvCore/mrvBackend.h"
 #include "mrvCore/mrvHome.h"
-#include "mrvCore/mrvImage.h"
+#include "mrvCore/mrvImageOps.h"
 #include "mrvCore/mrvString.h"
 #include "mrvCore/mrvWait.h"
 
@@ -21,9 +21,7 @@
 #    include <tlGL/Init.h>
 #endif
 
-#ifdef VULKAN_BACKEND
-#    include <tlTimelineUIVk/ThumbnailSystem.h>
-#endif
+#include <tlTimelineUI/ThumbnailSystem.h>
 
 #include <tlIO/System.h>
 
